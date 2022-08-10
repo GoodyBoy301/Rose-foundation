@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Playfair+Display&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .padding {
+    @apply px-32;
+  }
+
+  .hero {
+    @apply flex justify-between;
+  }
+
+  .donate-btn {
+    @apply bg-myRed text-white  text-[20px] py-3 px-8 duration-200 hover:bg-myDarkRed;
+  }
+
+  .margin {
+    @apply mt-24;
+  }
+  .header {
+    @apply font-playfair text-[40px] font-[800];
+  }
+}

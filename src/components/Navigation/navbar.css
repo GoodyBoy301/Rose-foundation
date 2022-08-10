@@ -1,0 +1,69 @@
+.nav {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+.nav-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.nav-toggler div {
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  transition: 0.2s ease-in;
+}
+
+.nav-toggler {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-toggler {
+    display: block;
+  }
+
+  .nav {
+    background-color: #7f288d;
+  }
+
+  .nav-menu {
+    z-index: 100;
+    position: fixed;
+    flex-direction: column;
+    top: 7vh;
+    right: 0;
+    width: 50%;
+    height: 93vh;
+    background: #7f288d;
+    transform: translateX(100%);
+    transition: 0.2s ease-in;
+  }
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+
+.toggler .line1 {
+  transform: rotate(-45deg) translate(-14px, 8px);
+}
+.toggler .line2 {
+  opacity: 0;
+}
+.toggler .line3 {
+  transform: rotate(45deg) translate(-6px, 2px);
+}
