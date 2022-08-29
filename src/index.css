@@ -6,21 +6,105 @@
 
 @layer base {
   .padding {
-    @apply px-32;
+    @apply px-6 lg:px-32;
   }
 
   .hero {
-    @apply flex justify-between;
+    @apply relative lg:top-0 top-[65px] flex flex-col-reverse md:flex-row md:justify-between;
   }
 
   .donate-btn {
-    @apply bg-myRed text-white  text-[20px] py-3 px-8 duration-200 hover:bg-myDarkRed;
+    @apply bg-myRed text-white text-[16px]  lg:text-[20px] py-3 px-8 duration-200 hover:bg-myDarkRed;
   }
 
   .margin {
     @apply mt-24;
   }
   .header {
-    @apply font-playfair text-[40px] font-[800];
+    @apply font-playfair text-center lg:text-left text-[24px] lg:text-[40px] font-[800];
   }
+}
+
+.nav {
+  display: flex;
+z-index: 100;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+.nav-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+
+.nav-toggler div {
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  transition: 0.2s ease-in;
+}
+
+.nav-toggler {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-toggler {
+    display: block;
+  }
+
+  .nav {
+     background-color: white;
+
+  }
+
+  .nav-menu {
+        background-color: #af1835;
+
+    justify-content: initial;
+    z-index: 100;
+    position: fixed;
+    flex-direction: column;
+    top: 7.5vh;
+    right: 0;
+    width: 50%;
+    height: 93vh;
+    padding-top: 30px;
+
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+
+.toggler .line1 {
+  transform: rotate(-45deg) translate(-14px, 8px);
+        background-color: #af1835;
+
+}
+
+.toggler .line2 {
+  opacity: 0;
+        background-color: #af1835;
+
+}
+
+.toggler .line3 {
+  transform: rotate(45deg) translate(-6px, 2px);
+        background-color: #af1835;
+
 }

@@ -6,11 +6,11 @@ import MoreInfo from "./components/MoreInfo";
 
 function App() {
   return (
-    <div className='font-dmsans'>
+    <div className="font-dmsans mx-auto max-w-[2000px]">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='info' element={<MoreInfo />} />
+        <Route path="/" element={<Home />} />
+        <Route path="info" element={<MoreInfo />} />
       </Routes>
 
       <Footer />
