@@ -27,7 +27,7 @@
 
 .nav {
   display: flex;
-z-index: 100;
+  z-index: 100;
   align-items: center;
   justify-content: space-between;
   height: 8vh;
@@ -44,7 +44,6 @@ z-index: 100;
   justify-content: space-around;
   gap: 3rem;
 }
-
 
 .nav-toggler div {
   width: 2rem;
@@ -65,12 +64,11 @@ z-index: 100;
   }
 
   .nav {
-     background-color: white;
-
+    background-color: white;
   }
 
   .nav-menu {
-        background-color: #af1835;
+    background-color: #af1835;
 
     justify-content: initial;
     z-index: 100;
@@ -93,18 +91,12 @@ z-index: 100;
 
 .toggler .line1 {
   transform: rotate(-45deg) translate(-14px, 8px);
-        background-color: #af1835;
-
 }
 
 .toggler .line2 {
   opacity: 0;
-        background-color: #af1835;
-
 }
 
 .toggler .line3 {
   transform: rotate(45deg) translate(-6px, 2px);
-        background-color: #af1835;
-
 }
