@@ -32,7 +32,7 @@ const DonateDialog = () => {
             </p>
           </Dialog.Title>
           <Dialog.Description className="text-mauve11 mt-[10px] text-center mb-5 text-[15px] leading-normal">
-            <p className="text-lg text-medium bg-gray-200 border mt-4 rounded p-3">
+            <p className="text-lg overflow-hidden truncate text-medium bg-gray-200 border mt-4 rounded p-3">
               {" "}
               {btcAddress}
             </p>
