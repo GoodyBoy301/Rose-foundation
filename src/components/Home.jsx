@@ -260,8 +260,8 @@ export default function Home() {
                   for the Cincinnati Bengals of the National Football League. He
                   played college football at LSU, where he won the Fred
                   Biletnikoff Award and the 2020 College Football Playoff
-                  National Championship as a sophomore.Has a passion for making
-                  sure children and well taken care of.
+                  National Championship as a sophomore. Has a passion for making
+                  sure children are well taken care of.
                 </p>
               </div>
             </div>
