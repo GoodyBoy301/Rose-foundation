@@ -40,7 +40,7 @@ const DonateDialog = () => {
               onClick={handleCopyClick}
               className="ml-2 text-violet11 px-4 py-2 bg-myDarkRed text-white mt-4 focus:shadow-violet7 inline-flex items-center  rounded-md focus:outline-none"
             >
-              {isCopied ? "Copied" : "Copy"}
+              {isCopied ? "Copied" : "Copy address"}
               {isCopied ? null : <ClipboardIcon className="ml-1 w-4 h-4" />}
             </button>
           </Dialog.Description>
