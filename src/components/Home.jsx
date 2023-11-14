@@ -13,8 +13,12 @@ import {
   profile,
   arrowLeft,
   roundLine,
+  pic1,
+  pic2,
+  pic3,
 } from "../assets/index";
 import { Element } from "react-scroll";
+import DonateDialog from "./Dialog";
 
 export default function Home() {
   return (
@@ -38,9 +42,7 @@ export default function Home() {
             </p>
 
             <div className="mt-16 flex">
-              <a href="#" className="donate-btn ">
-                Donate Now
-              </a>
+              <DonateDialog />
               <button className=" text-[16px] lg:text-[20px]  ml-20">
                 Explore
                 <img src={arrow} alt="arrow" className=" inline-block ml-4 " />
@@ -136,9 +138,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12">
-            <a href="#" className="donate-btn">
-              Donate Now
-            </a>
+            <DonateDialog />
           </div>
         </div>
         <div>
@@ -246,7 +246,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 mx-auto mt-10">
             <div>
-              <div className="bg-black  lg:mt-0 mt-10 w-auto lg:w-[390px] h-[383px]"></div>
+              <div className="  lg:mt-0 mt-10 w-auto lg:w-[390px]">
+                <img className="h-[320px] w-full" src={pic3} />
+              </div>
 
               <div className="mt-4">
                 <h3 className="font-playfair text-[24px] font-[800]">
@@ -264,8 +266,8 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="bg-black lg:mt-0 mt-10 w-auto lg:w-[390px] h-[383px]"></div>
-
+              <div className=" lg:mt-0 mt-10 w-auto lg:w-[390px]"></div>
+              <img src={pic1} />
               <div className="mt-4">
                 <h3 className="font-playfair text-[24px] font-[800]">
                   Andrei Iosiva
@@ -281,13 +283,14 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="bg-black lg:mt-0 mt-10 w-auto lg:w-[390px] h-[383px]"></div>
+              <div className=" lg:mt-0 mt-10 w-auto lg:w-[390px] "></div>
+              <img src={pic2} />
 
               <div className="mt-4">
                 <h3 className="font-playfair text-[24px] font-[800]">
-                  Co-Founder
+                  Joseph Burrow
                 </h3>
-                <p className="text-[18px] font-[400] mt-2">Member</p>
+                <p className="text-[18px] font-[400] mt-2"> Co-Founder</p>
                 <p className="font-[16px] font-[400] w-[340px] mt-4">
                   Joseph Lee Burrow is an American football quarterback for the
                   Cincinnati Bengals of the National Football League. Following

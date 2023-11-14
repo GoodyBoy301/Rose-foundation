@@ -16,6 +16,9 @@ import darkKids from "./darkKids.png";
 import phone from "./phone.png";
 import mail from "./mail.png";
 import instagram from "./instagram.png";
+import pic1 from "./pic1.jpg";
+import pic2 from "./pic2.jpg";
+import pic3 from "./pic3.jpg";
 
 export {
   logo,
@@ -36,4 +39,7 @@ export {
   phone,
   mail,
   instagram,
+  pic1,
+  pic2,
+  pic3,
 };

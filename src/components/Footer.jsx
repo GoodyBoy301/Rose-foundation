@@ -1,5 +1,6 @@
 import { phone, mail, instagram, logo } from "../assets/index.js";
 import { Element } from "react-scroll";
+import DonateDialog from "./Dialog";
 
 export default function Footer() {
   return (
@@ -12,9 +13,7 @@ export default function Footer() {
                 Get involved. You can help.
               </h2>
               <div className="mt-12 mx-auto w-fit">
-                <a href="#" className="donate-btn">
-                  Donate Now
-                </a>
+                <DonateDialog />
               </div>
             </div>
           </div>
@@ -28,7 +27,7 @@ export default function Footer() {
                 <div className="flex items-center w-auto lg:w-[350px]">
                   <img src={phone} alt="Phone Image" />
                   <p className=" ml-4 font-playfair  text-[16px] lg:text-[26.39px] font-[800]">
-                    +234(0) 80 3771 7563
+                    Whatsapp Line - +1(520)839-3831
                   </p>
                 </div>
 
@@ -84,9 +83,7 @@ export default function Footer() {
               </a>
             </div>
             <div>
-              <a href="#" className="donate-btn">
-                Donate Now
-              </a>
+              <DonateDialog />
             </div>
           </div>
 

@@ -35,8 +35,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className='  z-50  nav px-8 lg:px-0 w-full text-white justify-around md:justify-between  fixed md:static  '>
-        <Link to='/' className=' md:pb-8  md:mt-32 md:mx-32 '>
+      <nav className="  z-50  nav px-8 lg:px-0 w-full text-white justify-around md:justify-between   md:static  ">
+        <Link to="/" className=" md:pb-8  md:mt-32 md:mx-32 ">
           <img src={logo} alt={logo} />
         </Link>
         <ul
@@ -45,7 +45,7 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <li
               key={index}
-              className='nav-item cursor-pointer duration-200  xl:hover:text-myRed'
+              className="nav-item cursor-pointer duration-200  xl:hover:text-myRed"
             >
               {isHome ? (
                 <ScrollLink
@@ -67,9 +67,9 @@ const Navbar = () => {
           onClick={navToggler}
           className={` bg-myDarkRed p-2 flex items-center justify-center ${toggleIcon} `}
         >
-          <div className='line1 bg-white'></div>
-          <div className='line2 bg-white'></div>
-          <div className='line3 bg-white'></div>
+          <div className="line1 bg-white"></div>
+          <div className="line2 bg-white"></div>
+          <div className="line3 bg-white"></div>
         </div>
       </nav>
     </div>
