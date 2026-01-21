@@ -62,6 +62,14 @@
   &-media {
     width: 100%;
     height: auto;
+    position: relative;
+    clip-path: inset(-100% 0% 0% 0%);
+
+    .donate {
+      position: absolute;
+      top: 100%;
+      right: 15rem;
+    }
   }
 
   &-bottom {

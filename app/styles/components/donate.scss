@@ -1,0 +1,183 @@
+.donate {
+  background-color: red;
+  width: 39.6rem;
+  height: 40.3rem;
+  border-radius: 2rem;
+  border: 1px solid #d7d7d7;
+  background: #f7f7f7;
+  transform: translateY(-6.1rem);
+  box-shadow: 0 0.4rem 2.4rem 0.8rem rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: transform 0.25s ease;
+  &.isActive {
+    transform: translateY(-99%);
+
+    h3 svg {
+      transform: rotate(0deg);
+    }
+  }
+
+  h3 {
+    color: #130000;
+    font-family: "Product Sans";
+    font-size: 1.9959rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.0599rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.9rem 2.2rem;
+    cursor: pointer;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-modes {
+    display: flex;
+
+    button {
+      flex: 1;
+      color: rgba(30, 30, 30, 0.45);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: -0.028rem;
+      height: 4.8rem;
+      background-color: transparent;
+      cursor: pointer;
+
+      &.isActive {
+        color: #1e1e1e;
+        border-bottom: 0.2rem solid #000;
+      }
+    }
+  }
+
+  h4 {
+    padding: 2.5rem 2.2rem 0.8rem;
+    color: rgba(30, 30, 30, 0.45);
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.028rem;
+  }
+
+  &-amounts {
+    display: flex;
+    margin: 0 2.2rem;
+    display: flex;
+    padding: 0.4rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 0.8rem;
+    background: #efefef;
+    width: fit-content;
+
+    p {
+      color: rgba(19, 0, 0, 0.2);
+      display: flex;
+      padding: 1.42rem;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2147rem;
+      border-radius: 0.6rem;
+      font-family: "Geist Mono";
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      cursor: pointer;
+
+      &.isActive {
+        border: 0.1rem solid #e3e3e3;
+        background: #fff;
+        color: #130000;
+      }
+    }
+  }
+
+  &-break {
+    padding: 1.6rem 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: rgba(30, 30, 30, 0.45);
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.028rem;
+    hr {
+      background: #e3e3e3;
+      height: 0.1rem;
+      border: unset;
+      width: 100%;
+    }
+  }
+
+  &-input {
+    display: flex;
+    margin: 0 2.2rem;
+    align-items: center;
+    background: #efefef;
+    color: #130000;
+    font-family: "Geist Mono";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    height: 4rem;
+    border-radius: 0.7rem;
+    padding: 0 1.5rem;
+    gap: 2.6rem;
+
+    input {
+      color: #130000;
+      font-family: "Geist Mono";
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      background-color: transparent;
+      border: none;
+      flex: 1;
+      &:placeholder-shown,
+      &::placeholder {
+        color: rgba(19, 0, 0, 0.2);
+      }
+    }
+  }
+
+  &-cta {
+    display: flex;
+    padding: 1.2rem 1.6rem;
+    align-items: center;
+    gap: 0.4rem;
+    justify-content: center;
+    border-radius: 0.8rem;
+    background-color: #e12247;
+    color: #fefefe;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.014rem;
+    margin: 2.44rem 2.2rem;
+    width: 35.2rem;
+    transition: background-color 0.15s ease;
+    &:hover {
+      background-color: rgb(205, 29, 63);
+    }
+  }
+}

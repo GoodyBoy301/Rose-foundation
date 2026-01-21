@@ -9,6 +9,7 @@ $breakpoints: (
 @import "../../node_modules/include-media/dist/include-media";
 @import url("https://fonts.cdnfonts.com/css/inter");
 @import url("https://fonts.cdnfonts.com/css/google-sans");
+@import url("https://fonts.cdnfonts.com/css/geist-mono");
 
 html {
   font-size: calc(100vw / 1440 * 10);
@@ -53,3 +54,4 @@ svg * {
 
 @import "./components/header.scss";
 @import "./components/footer.scss";
+@import "./components/donate.scss";

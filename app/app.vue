@@ -25,4 +25,8 @@ onMounted(() => {
 
   gsap.ticker.lagSmoothing(0);
 });
+
+useHead({
+  title: "Rose Foundation",
+});
 </script>

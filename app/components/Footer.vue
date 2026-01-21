@@ -11,6 +11,7 @@
       </div>
     </div>
     <figure class="footer-media">
+      <Donate />
       <img src="/images/footer.webp" alt="" />
     </figure>
     <div class="footer-bottom">
