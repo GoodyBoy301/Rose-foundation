@@ -1,0 +1,55 @@
+@import "./base/reset";
+
+$breakpoints: (
+  "phone": 760px,
+  "tablet": 1024px,
+  "desktop": 1920px,
+) !default;
+
+@import "../../node_modules/include-media/dist/include-media";
+@import url("https://fonts.cdnfonts.com/css/inter");
+@import url("https://fonts.cdnfonts.com/css/google-sans");
+
+html {
+  font-size: calc(100vw / 1440 * 10);
+  @include media("<phone") {
+    font-size: calc(100vw / 440 * 10);
+  }
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+[data-desktop] {
+  @include media("<phone") {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
+[data-mobile] {
+  @include media(">=phone") {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+svg * {
+  shape-rendering: crispEdges;
+}
+
+@import "./pages/about.scss";
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
