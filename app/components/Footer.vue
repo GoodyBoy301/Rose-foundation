@@ -36,10 +36,10 @@
         <p data-desktop="">© 2026 Rose Foundation. All rights reserved.</p>
       </div>
       <div class="footer-bottom-right">
-        <h5>Space Locations</h5>
+        <h5>Address</h5>
         <div>
           <nav>
-            <h6>Nsukka, EN</h6>
+            <h6>M.A. AjaNwachuku & Associates</h6>
             <address>
               No. 1 Nwodo Street,<br />
               Abakaliki, Ebonyi State,<br />
