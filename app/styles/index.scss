@@ -12,7 +12,7 @@ $breakpoints: (
 @import url("https://fonts.cdnfonts.com/css/geist-mono");
 
 html {
-  font-size: calc(100vw / 1440 * 10);
+  font-size: calc(100vw / 1512 * 10);
   @include media("<phone") {
     font-size: calc(100vw / 440 * 10);
   }
@@ -50,6 +50,7 @@ svg * {
   shape-rendering: crispEdges;
 }
 
+@import "./pages/home.scss";
 @import "./pages/about.scss";
 
 @import "./components/header.scss";

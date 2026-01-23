@@ -1,11 +1,7 @@
 .footer {
   position: relative;
-  margin-top: 10rem;
   max-width: 100%;
   overflow: hidden;
-  @include media("<phone") {
-    margin-top: 8rem;
-  }
 
   &-top {
     background: #e12247;
