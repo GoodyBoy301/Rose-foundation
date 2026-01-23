@@ -221,4 +221,76 @@
       }
     }
   }
+
+  .we {
+    padding: 7.3rem 0 9.3rem;
+    @include media("<phone") {
+      padding: 6.3rem 0 10rem;
+    }
+
+    &-heading {
+      color: #151515;
+      font-family: "Product Sans";
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.032rem;
+      text-align: center;
+      @include media("<phone") {
+        ont-size: 2.4rem;
+        letter-spacing: -0.024rem;
+      }
+    }
+
+    &-modes {
+      display: flex;
+      width: 29rem;
+      margin: 2.7rem auto 0;
+      @include media("<phone") {
+        margin-top: 2.3rem;
+      }
+
+      button {
+        flex: 1;
+        color: rgba(30, 30, 30, 0.45);
+        font-family: Inter;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.028rem;
+        height: 4.8rem;
+        background-color: transparent;
+        cursor: pointer;
+
+        &.isActive {
+          color: #1e1e1e;
+          border-bottom: 0.2rem solid #000;
+        }
+      }
+    }
+    &-media {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    &-text {
+      color: #130000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.016rem;
+      width: 59rem;
+      margin: 4.4rem auto 0;
+      @include media("<phone") {
+        width: 32.8rem;
+        margin-top: 3.8rem;
+      }
+    }
+  }
 }

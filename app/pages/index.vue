@@ -60,5 +60,25 @@
         </div>
       </li>
     </ul>
+
+    <section class="we">
+      <h2 class="we-heading">And here’s how we help</h2>
+      <div class="we-modes">
+        <button :class="{ isActive: weType === 0 }" @click="weType = 0">Litigation</button>
+        <button :class="{ isActive: weType === 1 }" @click="weType = 1">Advocacy</button>
+      </div>
+      <figure class="we-media">
+        <img src="/images/we-media.webp" alt="" data-desktop />
+        <img src="/images/we-media-mobile.webp" alt="" data-mobile />
+      </figure>
+      <p class="we-text">
+        Rose Foundation provides compassionate protection and pro bono legal support to survivors of abuse, injustice, and human
+        rights violations.
+      </p>
+    </section>
   </main>
 </template>
+
+<script setup lang="ts">
+const weType = ref(1);
+</script>
