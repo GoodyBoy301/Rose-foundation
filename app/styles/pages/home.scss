@@ -293,4 +293,71 @@
       }
     }
   }
+
+  .gallery {
+    background: #f3f3f3;
+    padding: 8.3rem 0;
+    @include media("<phone") {
+    }
+
+    &-heading {
+      margin-left: 10rem;
+      color: #151515;
+      font-family: "Product Sans";
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.032rem;
+      @include media("<phone") {
+        margin: 0;
+        text-align: center;
+      }
+    }
+
+    &-media {
+      display: flex;
+      width: 100vw;
+      overflow: hidden;
+      margin-top: 0.8rem;
+
+      li {
+        width: 83.4rem;
+        height: 47.3rem;
+        flex-shrink: 0;
+        padding: 0.8rem;
+        position: relative;
+        left: 30rem;
+        @include media("<phone") {
+          width: 37.6rem;
+          height: 47.5rem;
+          left: 2.9rem;
+          padding: 0.6rem;
+        }
+
+        img {
+          border-radius: 1.0171rem;
+          background: #101010;
+        }
+      }
+    }
+
+    &-text {
+      color: #130000;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.016rem;
+      width: 59rem;
+      margin-top: 4.8rem;
+      margin-left: 10rem;
+      @include media("<phone") {
+        margin: 1.7rem auto 3rem;
+        text-align: center;
+        width: 35.8rem;
+      }
+    }
+  }
 }

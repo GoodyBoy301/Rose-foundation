@@ -76,9 +76,47 @@
         rights violations.
       </p>
     </section>
+
+    <section class="gallery">
+      <h2 class="gallery-heading">Gallery</h2>
+      <p class="gallery-text" data-mobile>
+        Through legal support, advocacy, and community action, we help create safer futures for women and children — one case at a
+        time.
+      </p>
+      <ul class="gallery-media" data-slider>
+        <li>
+          <img src="/images/gallery-01.webp" alt="" />
+        </li>
+        <li>
+          <img src="/images/gallery-01.webp" alt="" />
+        </li>
+        <li>
+          <img src="/images/gallery-01.webp" alt="" />
+        </li>
+        <li>
+          <img src="/images/gallery-01.webp" alt="" />
+        </li>
+        <li>
+          <img src="/images/gallery-01.webp" alt="" />
+        </li>
+        <li>
+          <img src="/images/gallery-01.webp" alt="" />
+        </li>
+      </ul>
+      <p class="gallery-text" data-desktop>
+        Through legal support, advocacy, and community action, we help create safer futures for women and children — one case at a
+        time.
+      </p>
+    </section>
   </main>
 </template>
 
 <script setup lang="ts">
 const weType = ref(1);
+
+import { ControlsSlider } from "~/interactions/carousel";
+
+onMounted(() => {
+  new ControlsSlider(document.querySelector(".gallery") as HTMLElement, { sensisitivity: 0.875 });
+});
 </script>
