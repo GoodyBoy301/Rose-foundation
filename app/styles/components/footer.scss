@@ -1,6 +1,8 @@
 .footer {
   position: relative;
   margin-top: 10rem;
+  max-width: 100%;
+  overflow: hidden;
 
   &-top {
     background: #e12247;
@@ -17,6 +19,7 @@
       letter-spacing: -0.12rem;
       width: 83.8rem;
       margin: 0 auto;
+      max-width: 100%;
     }
     &-ctas {
       display: flex;
