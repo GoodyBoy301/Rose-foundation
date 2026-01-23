@@ -12,7 +12,8 @@
     </div>
     <figure class="footer-media">
       <Donate />
-      <img src="/images/footer.webp" alt="" />
+      <img src="/images/footer.webp" alt="" data-desktop />
+      <img src="/images/footer-mobile.webp" alt="" data-mobile />
     </figure>
     <div class="footer-bottom">
       <div class="footer-bottom-left">
@@ -32,14 +33,18 @@
             <NuxtLink href="https://linkedin.com/rose.foundation_">LinkedIn</NuxtLink>
           </nav>
         </div>
-        <p>© 2026 Rose Foundation. All rights reserved.</p>
+        <p data-desktop="">© 2026 Rose Foundation. All rights reserved.</p>
       </div>
       <div class="footer-bottom-right">
         <h5>Space Locations</h5>
         <div>
           <nav>
             <h6>Nsukka, EN</h6>
-            <address>Plot E,<br />Students Union Building (SUB),<br />University of Nigeria, Nsukka.</address>
+            <address>
+              No. 1 Nwodo Street,<br />
+              Abakaliki, Ebonyi State,<br />
+              Nigeria.
+            </address>
           </nav>
         </div>
       </div>
