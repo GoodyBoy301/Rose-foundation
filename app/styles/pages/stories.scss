@@ -1,0 +1,284 @@
+.stories {
+  background: #fafafa;
+  .hero {
+    position: relative;
+    padding: 15.4rem 10rem 5.7rem;
+    @include media("<phone") {
+      padding: 11.5rem 0rem 5rem;
+    }
+
+    &-heading {
+      width: 76.8rem;
+      color: #130000;
+      font-family: "Product Sans";
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: -0.08rem;
+      @include media("<phone") {
+        font-size: 3.2rem;
+        letter-spacing: -0.096rem;
+        width: 37.5rem;
+        margin: 0 auto;
+      }
+    }
+
+    &-subheading {
+      color: #130000;
+      text-align: left;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.016rem;
+      width: 75.5rem;
+      margin: 4.6rem 18rem 0;
+      @include media("<phone") {
+        width: 37.5rem;
+        font-size: 1.6rem;
+        letter-spacing: -0.016rem;
+        margin: 2.4rem auto 0;
+      }
+    }
+  }
+
+  &-how {
+    figure {
+      width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      display: flex;
+      padding: 1.4rem 1.6rem;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      border-radius: 0.8rem;
+      border: 0.1rem solid #d2d2d2;
+      background: #e6e6e6;
+      color: #130000;
+      font-family: "Product Sans";
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.016rem;
+      margin: 6.3rem 10rem 0;
+      width: fit-content;
+      @include media("<phone") {
+        margin: 3.7rem 3.2rem 0;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 2.1rem 10rem 0;
+      padding-bottom: 8.2rem;
+      @include media("<phone") {
+        margin: 0rem 3.2rem;
+        padding-bottom: 1.6rem;
+      }
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      border-top: 0.1rem solid #d2d2d2;
+      padding-block: 4rem;
+      @include media("<phone") {
+        overflow: hidden;
+        span {
+          opacity: 0 !important;
+        }
+        &:hover {
+          span {
+            opacity: 1 !important;
+          }
+        }
+      }
+      h3 {
+        opacity: 0.4;
+        transition: opacity 0.05s ease;
+      }
+      p {
+        opacity: 0.8;
+        transition: opacity 0.05s ease;
+      }
+      span {
+        opacity: 0.15;
+        transition: opacity 0.05s ease;
+      }
+      filter: grayscale(1);
+      &:nth-of-type(1) {
+        border: unset;
+      }
+      &:hover {
+        h3 {
+          opacity: 1;
+        }
+        p {
+          opacity: 1;
+        }
+        span {
+          opacity: 1;
+        }
+        filter: grayscale(0);
+      }
+    }
+
+    h3 {
+      align-self: stretch;
+      color: #130000;
+      font-family: "Product Sans";
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: -0.064rem;
+    }
+
+    p {
+      align-self: stretch;
+      color: rgba(66, 33, 17, 0.7);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.016rem;
+      margin-top: 2.8rem;
+    }
+  }
+
+  &-blog {
+    background: #0a0a0a;
+    padding: 6.3rem 10rem 0;
+    @include media("<phone") {
+      padding: 3.7rem 3.2rem 0;
+    }
+
+    h2 {
+      display: inline-flex;
+      padding: 1.4rem 1.6rem;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      border-radius: 0.8rem;
+      border: 0.1rem solid #323232;
+      background: #282828;
+      color: #fff;
+      font-family: "Product Sans";
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.016rem;
+    }
+
+    &-content {
+      display: flex;
+      margin-top: 3.7rem;
+      justify-content: space-between;
+      @include media("<phone") {
+        flex-direction: column;
+        margin-top: 2.7rem;
+      }
+
+      div {
+        margin-top: 0.8rem;
+        @include media("<phone") {
+          margin-top: 0rem;
+        }
+      }
+
+      span {
+        color: #a0a0a0;
+        font-family: Inter;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.013rem;
+      }
+
+      h3 {
+        color: #f3f3f3;
+        font-family: "Product Sans";
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.12rem;
+        width: 46.9rem;
+        margin-top: 2.2rem;
+        @include media("<phone") {
+          font-size: 3.2rem;
+          letter-spacing: -0.096rem;
+          width: 37.5rem;
+        }
+      }
+
+      p {
+        color: #f0f0f0;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.016rem;
+        width: 46.9rem;
+        margin-top: 1.6rem;
+        @include media("<phone") {
+          width: 37.5rem;
+        }
+      }
+
+      button {
+        margin-top: 4.8rem;
+        display: flex;
+        height: 4rem;
+        padding: 1.2rem 1rem 1.2rem 1.2rem;
+        align-items: center;
+        gap: 1.2rem;
+        border-radius: 0.8rem;
+        background: #e12247;
+        color: #fefefe;
+        text-align: right;
+        font-family: Inter;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.014rem;
+        transition: background-color 0.15s ease;
+        &:hover {
+          background-color: rgb(205, 29, 63);
+        }
+
+        svg {
+          width: 1.7rem;
+          height: 1.7rem;
+          margin: 0;
+        }
+      }
+
+      figure {
+        display: flex;
+        width: 74.9rem;
+        height: 52.9rem;
+        justify-content: center;
+        align-items: center;
+        @include media("<phone") {
+          width: 100%;
+          height: auto;
+          margin-top: 2.68rem;
+        }
+      }
+    }
+  }
+}
