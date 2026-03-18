@@ -1,12 +1,13 @@
 <template>
   <main class="stories">
     <section class="hero">
-      <h1 class="hero-heading">Our Approach to Storytelling</h1>
+      <h1 class="hero-heading">Justice in Action</h1>
       <p class="hero-subheading">
-        We share selected cases to show how protection and justice are achieved in practice.<br /><br />
-        All stories are anonymised.<br />
-        Identifying details are withheld to protect survivors and ongoing legal processes.<br />
-        What remains unchanged are the facts of the violations, the interventions, and the outcomes.
+        We share selected case summaries to illustrate how legal protection and justice are pursued in practice.
+        <i />
+        All stories are fully anonymised. Identifying details are withheld to safeguard survivors and protect ongoing legal
+        proceedings. What remains unchanged are the facts of the violations, the legal interventions undertaken, and the outcomes
+        achieved.
       </p>
     </section>
     <section class="stories-how">
@@ -14,27 +15,28 @@
         <img src="/images/stories-media.webp" alt="" data-desktop />
         <img src="/images/stories-media-mobile.webp" alt="" data-mobile />
       </figure>
-      <h2>Our Stories</h2>
+      <h2>Our Approach</h2>
       <ul>
         <li>
           <h3>Reach Out Safely</h3>
           <p>
-            Get in touch in the way that feels safest for you. Survivors or concerned individuals can contact us to seek help or
-            report abuse. Every conversation is handled with confidentiality, care, and respect.
+            Contact us in the way that feels safest for you. Survivors or concerned individuals can reach out to request legal
+            assistance or report abuse. Every communication is handled with strict confidentiality, care, and respect.
           </p>
         </li>
         <li>
           <h3>Assess & Protect</h3>
           <p>
-            We listen first, then act. Our team reviews the situation, explains available legal options in clear language, and
-            prioritizes safety. Where necessary, we connect survivors to immediate protection and support.
+            We listen carefully and assess each case with diligence. Our team explains your legal rights and available options in
+            clear terms, prioritizing immediate safety and protection. Where necessary, we coordinate urgent protective measures
+            and referrals.
           </p>
         </li>
         <li>
           <h3>Advocate for Justice</h3>
           <p>
-            We stand with you through the process. We provide pro bono legal representation, advocacy, and ongoing guidance —
-            ensuring survivors are supported every step of the way, until justice and protection are secured.
+            We provide pro-bono legal representation and stand with you throughout the legal process. From filing actions to court
+            proceedings and follow-up support, we remain committed until justice and protection are secured.
           </p>
         </li>
       </ul>
